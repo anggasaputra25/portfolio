@@ -9,18 +9,18 @@ Fancybox.bind("[data-fancybox]", {
     },
 });
 // Remove Overflow
-window.addEventListener('DOMContentLoaded', function() {
-    var homeDiv = document.getElementById('home');
-    var aboutDiv = document.getElementById('about');
-    var projectsDiv = document.getElementById('projects');
-    var contactDiv = document.getElementById('contact');
-    var body = document.body;
+// window.addEventListener('DOMContentLoaded', function() {
+//     var homeDiv = document.getElementById('home');
+//     var aboutDiv = document.getElementById('about');
+//     var projectsDiv = document.getElementById('projects');
+//     var contactDiv = document.getElementById('contact');
+//     var body = document.body;
 
-    // Cek apakah tinggi div home melebihi 100vh
-    if (homeDiv.clientHeight > window.innerHeight || aboutDiv.clientHeight > window.innerHeight || projectsDiv.clientHeight > window.innerHeight || contactDiv.clientHeight > window.innerHeight) {
-        body.classList.remove('overflow-hidden');
-    }
-});
+//     // Cek apakah tinggi div home melebihi 100vh
+//     if (homeDiv.clientHeight > window.innerHeight || aboutDiv.clientHeight > window.innerHeight || projectsDiv.clientHeight > window.innerHeight || contactDiv.clientHeight > window.innerHeight) {
+//         body.classList.remove('overflow-hidden');
+//     }
+// });
 
 // Send message
 function sendWhatsApp() {
