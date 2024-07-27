@@ -5,9 +5,6 @@
 *{
     font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: var(--first-color)!important;
-}
 .glassmorphism{
     background: rgba(255, 255, 255, 0.2);
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
@@ -120,6 +117,22 @@ body{
   animation: wave 15s linear infinite;
   border-radius: 42%;
   background: rgba(255, 255, 255, 0.5);
+}
+
+.certificates img {
+  transition: ease 0.2s all;
+}
+.certificates img:hover {
+  transform: scale(1.1);
+}
+
+.detail-show:hover .detail{
+  opacity: 100;
+}
+.detail{
+  background: rgba(0, 0, 0, 0.5);
+  transition: all ease 0.2s;
+  opacity: 0;
 }
 
 

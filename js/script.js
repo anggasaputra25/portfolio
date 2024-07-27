@@ -33,3 +33,14 @@ function sendWhatsApp() {
     var whatsappLink = "https://wa.me/6283847406524?text=" + encodeURIComponent(message);
     window.open(whatsappLink, "_blank");
 }
+
+window.addEventListener('scroll', function() {
+    const button = document.querySelector('.btn-top');
+    if (window.scrollY > 1) {
+        button.style.marginRight = "8px";
+        button.style.transform = "rotate(0deg)";
+    } else {
+        button.style.marginRight = "-30px";
+        button.style.transform = "rotate(90deg)";
+    }
+});

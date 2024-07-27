@@ -22,16 +22,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
+    <a href="#home" class="btn-top bg-white rounded-2 mb-2 text-purple position-fixed bottom-0 end-0 d-flex justify-content-center align-items-center z-3 shadow-sm" style="width: 30px; height: 30px; transition: all ease 0.5s; margin-right: -30px; transform: rotate(90deg);"><i class="bi bi-caret-up-fill"></i></a>
     <nav class="position-fixed w-100 z-1">
         <ul class="glassmorphism shadow-sm m-auto list-unstyled d-flex mt-2 p-3 rounded-3" style="width: fit-content;">
-            <li><a href="#home" class="text-decoration-none p-2 ">Home</a></li>
+            <!-- <li><a href="#home" class="text-decoration-none p-2 ">Home</a></li> -->
             <li><a href="#about" class="text-decoration-none p-2 ">About</a></li>
-            <li><a href="#projects" class="text-decoration-none p-2 ">Portfolio</a></li>
+            <li><a href="#resume" class="text-decoration-none p-2 ">Resume</a></li>
+            <li><a href="#portfolio" class="text-decoration-none p-2 ">Portfolio</a></li>
             <li><a href="#contact" class="text-decoration-none p-2 ">Contact</a></li>
         </ul>
     </nav>
     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px" data-bs-smooth-scroll="true" class="scrollspy-example rounded-2 p-0" tabindex="0">
-        <div id="home" class="vh-100 position-relative overflow-hidden bg-white">
+        <div id="home" class="vh-100 position-relative overflow-hidden">
             <div class="position-absolute start-0 top-0 w-100 h-100 wave bg-purple">
                 <span class="position-absolute top-0 start-50" style="width: 325vh; height: 325vh; transform: translate(-50%, -75%);"></span>
                 <span class="position-absolute top-0 start-50" style="width: 325vh; height: 325vh; transform: translate(-50%, -75%);"></span>
@@ -42,21 +44,21 @@
                 <div class="text">
                     <h5 class="text-purple">Haloo Semua 👋, saya</h5>
                     <h1 class="fw-bold">I Ketut Angga Saputra</h1>
-                    <h5><span class="text-black-50">Web Developer</span> & Siswa</h5>
+                    <h5><span class="text-black-50">Web Developer</span> & Mahasiswa</h5>
                     <a href="assets/CV.pdf" target="_blank" class="btn-animate btn pe-5 ps-5" role="button"><span class="text">Unduh CV</span><span>Terima Kasih!</span></a>
                 </div>
             </div>
         </div>
-        <div id="about" class="d-flex min-vh-100 justify-content-center align-items-center pt-5 pt-sm-0">
+        <div id="about" class="bg-purple d-flex min-vh-100 justify-content-sm-center align-items-center pt-5 pt-sm-0">
             <div class="container row p-0 m-auto">
                 <div class="col-12 col-lg-3 d-flex justify-content-center overflow-hidden mb-4 mb-lg-0" data-aos="fade-down">
-                    <div id="carouselExampleAutoplaying" class="carousel slide rounded-3 overflow-hidden" data-bs-ride="carousel" style="width: 300px; height: 350px;">
+                    <div id="carouselExampleAutoplaying" class="carousel slide rounded-3 overflow-hidden bg-dark" data-bs-ride="carousel" style="width: 300px;">
                         <div class="carousel-inner h-100">
                           <div class="carousel-item h-100 active">
-                            <img src="assets/about/gallery1.png" alt="gallery1" class="d-block w-100 h-100 object-fit-cover">
+                            <img src="assets/about/gallery1.png" alt="gallery1" class="d-block w-100 h-100 object-fit-cover" style="object-position: 30% 100%;">
                           </div>
                           <div class="carousel-item h-100">
-                            <img src="assets/about/gallery2.jpeg" alt="gallery1" class="d-block w-100 h-100 object-fit-cover">
+                            <img src="assets/about/gallery2.jpeg" alt="gallery1" class="d-block w-100 h-100 object-fit-cover" style="object-position: 40% 100%;">
                           </div>
                           <div class="carousel-item h-100">
                             <img src="assets/about/gallery3.jpeg" alt="gallery2" class="d-block w-100 h-100 object-fit-cover">
@@ -73,54 +75,108 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-9 d-flex flex-column gap-2">
-                    <div class="w-100 p-3 glassmorphism rounded-2 shadow-sm">
+                    <div class="w-100 p-3 bg-white rounded-2 shadow-sm" data-aos="fade-right">
                         <h6 class="text-center text-lg-start text-purple mb-0">ABOUT ME</h6>
                         <h1 class="text-center text-lg-start">Siapa saya?</h1>
                         <p style="text-align: justify;">Saya I Ketut Angga Saputra, seorang pelajar yang bersemangat dari SMKN 1 Denpasar. Saya memiliki ketertarikan yang mendalam dalam dunia pengembangan website dan desain, dengan fokus pada menciptakan pengalaman pengguna yang menarik dan nyaman.</p>
                     </div>
-                    <div class="w-100 flex-grow-1 gap-2 d-flex flex-column flex-md-row">
-                        <div class="p-2 glassmorphism rounded-2 shadow-sm">
+                    <div class="w-100 flex-grow-1 gap-2 d-flex flex-column flex-md-row overflow-hidden">
+                        <div class="p-2 bg-white rounded-2 shadow-sm" data-aos="fade-left">
                             <h6 class="text-purple text-center">Skills</h6>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <img src="assets/skill/html-5.png" alt="html-5" width="40px" height="40px">
-                                <img src="assets/skill/css-3.png" alt="css-3" width="40px" height="40px">
-                                <img src="assets/skill/js.png" alt="js" width="40px" height="40px">
-                                <img src="assets/skill/java.png" alt="java" width="40px" height="40px">
-                                <img src="assets/skill/php.png" alt="php" width="40px" height="40px">
-                                <img src="assets/skill/python.png" alt="python" width="40px" height="40px">
-                                <img src="assets/skill/bootstrap.png" alt="bootstrap" width="40px" height="40px">
-                                <img src="assets/skill/reactjs.png" alt="bootstrap" width="40px" height="40px">
+                                <img src="assets/skill/html-5.png" alt="HTML5 icon" width="40px" height="40px" title="HTML5">
+                                <img src="assets/skill/css-3.png" alt="CSS3 icon" width="40px" height="40px" title="CSS3">
+                                <img src="assets/skill/js.png" alt="JavaScript icon" width="40px" height="40px" title="JavaScript">
+                                <img src="assets/skill/java.png" alt="Java icon" width="40px" height="40px" title="Java">
+                                <img src="assets/skill/php.png" alt="PHP icon" width="40px" height="40px" title="PHP">
+                                <img src="assets/skill/python.png" alt="Python icon" width="40px" height="40px" title="Python">
+                                <img src="assets/skill/bootstrap.png" alt="Bootstrap icon" width="40px" height="40px" title="Bootstrap">
+                                <img src="assets/skill/reactjs.png" alt="ReactJS icon" width="40px" height="40px" title="ReactJS">
+                            </div>
+                        </div>                        
+                        <div class="p-2 w-100 bg-white rounded-2 shadow-sm" data-aos="fade-left">
+                            <h6 class="text-purple text-center">Certificates</h6>
+                            <div class="certificates d-flex flex-wrap gap-2 justify-content-center">
+                                <a href="assets/sertifikat/IT_Software_Solution_for_Business_Certificate.pdf" class="position-relative detail-show" data-fancybox="sertifikat" data-caption="IT Software Solution for Business Certificate" title="IT Software Solution for Business Certificate">
+                                    <img src="assets/sertifikat/IT_Software_Solution_for_Business_Certificate.png" height="80px" class="rounded-2">
+                                    <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-5 rounded-2"><i class="bi bi-arrows-fullscreen"></i></div>
+                                </a>
+                                <a href="assets/sertifikat/Medallion_for_Excellence_IT_Software_Solution_for_Business.pdf" class="position-relative detail-show" data-fancybox="sertifikat" data-caption="Medallion for Excellence IT Software Solution for Business" title="Medallion for Excellence IT Software Solution for Business">
+                                    <img src="assets/sertifikat/Medallion_for_Excellence_IT_Software_Solution_for_Business.png" height="80px" class="rounded-2">
+                                    <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-5 rounded-2"><i class="bi bi-arrows-fullscreen"></i></div>
+                                </a>
+                                <a href="assets/sertifikat/PT_Hooki_Global_Kreasi_Certificate.pdf" class="position-relative detail-show" data-fancybox="sertifikat" data-caption="PT Hooki Global Kreasi Certificate" title="PT Hooki Global Kreasi Certificate">
+                                    <img src="assets/sertifikat/PT_Hooki_Global_Kreasi_Certificate.png" height="80px" class="rounded-2">
+                                    <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-5 rounded-2"><i class="bi bi-arrows-fullscreen"></i></div>
+                                </a>
+                                <a href="assets/sertifikat/PT_Bamboomedia_Cipta_Persada_Certificate.pdf" class="position-relative detail-show" data-fancybox="sertifikat" data-caption="PT Bamboomedia Cipta Persada Certificate" title="PT Bamboomedia Cipta Persada Certificate">
+                                    <img src="assets/sertifikat/PT_Bamboomedia_Cipta_Persada_Certificate.png" height="80px" class="rounded-2">
+                                    <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-5 rounded-2"><i class="bi bi-arrows-fullscreen"></i></div>
+                                </a>
                             </div>
                         </div>
-                        <div class="p-2 w-100 glassmorphism rounded-2 shadow-sm">
-                            <h6 class="text-purple text-center">Certificates</h6>
+                        <div class="p-2 bg-white rounded-2 shadow-sm" data-aos="fade-left">
+                            <h6 class="text-purple text-center">Tools</h6>
                             <div class="d-flex flex-wrap gap-2 justify-content-center">
-                                <a href="assets/sertifikat/IT_Software_Solution_for_Business_Certificate.pdf" data-fancybox="sertifikat" data-caption="IT Software Solution for Business Certificate">
-                                    <img src="assets/sertifikat/IT_Software_Solution_for_Business_Certificate.png" height="80px">
-                                </a>
-                                <a href="assets/sertifikat/Medallion_for_Excellence_IT_Software_Solution_for_Business.pdf" data-fancybox="sertifikat" data-caption="Medallion for Excellence IT Software Solution for Business">
-                                    <img src="assets/sertifikat/Medallion_for_Excellence_IT_Software_Solution_for_Business.png" height="80px">
-                                </a>
-                                <a href="assets/sertifikat/PT_Hooki_Global_Kreasi_Certificate.pdf" data-fancybox="sertifikat" data-caption="PT Hooki Global Kreasi Certificate">
-                                    <img src="assets/sertifikat/PT_Hooki_Global_Kreasi_Certificate.png" height="80px">
-                                </a>
-                                <a href="assets/sertifikat/PT_Bamboomedia_Cipta_Persada_Certificate.pdf" data-fancybox="sertifikat" data-caption="PT Bamboomedia Cipta Persada Certificate">
-                                    <img src="assets/sertifikat/PT_Bamboomedia_Cipta_Persada_Certificate.png" height="80px">
-                                </a>
+                                <img src="assets/tool/github.png" alt="github" width="40px" height="40px" title="github">
+                                <img src="assets/tool/figma.png" alt="figma" width="40px" height="40px" title="figma">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="projects" class="container-fluid d-flex min-vh-100 justify-content-center align-items-center mt-5 mt-lg-0 overflow-hidden">
+        <div id="resume" class="min-vh-100 pt-5 bg-purple text-center overflow-x-hidden d-flex flex-column justify-content-sm-center">
+            <div class="container">
+                <h6 data-aos="fade-right" class="text-purple mb-0">RESUME</h6>
+                <h1 data-aos="fade-left">Pendidikan</h1>
+                <div class="d-flex flex-column gap-2">
+                    <div class="text-start bg-white rounded-2 p-2 row m-0 gap-2 gap-lg-0" data-aos="fade-right">
+                        <div class="rounded-2 p-3 d-flex flex-column justify-content-between col-12 col-lg-3 col-xl-2 text-center text-lg-start" style="background-color: #e0e7ff97;">
+                            <div class="place">
+                                <h6 class="text-purple">2024 - Sekarang</h6>
+                                <p class="fw-medium mb-0">Primakara</p>
+                            </div>
+                            <div class="w-100 bg-purple my-1" style="height: 2px;"></div>
+                            <div class="status">
+                                <p class="mb-0">Mahasiswa</p>
+                                <p class="mb-0">Teknik Informatika</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9 col-xl-10 px-0 px-lg-2 d-flex flex-column justify-content-between">
+                            <p class="mb-0">Saya belum mendapatkan pengalaman apapun disini karena saya masih baru di Universitas ini.</p>
+                            <p class="mb-0 mt-3" style="width: max-content;"><i class="bi bi-pin-map-fill"></i> Denpasar, Bali</p>
+                        </div>
+                    </div>
+                    <div class="text-start bg-white rounded-2 p-2 row m-0 gap-2 gap-lg-0" data-aos="fade-left">
+                        <div class="rounded-2 p-3 d-flex flex-column justify-content-between col-12 col-lg-3 col-xl-2 text-center text-lg-start" style="background-color: #e0e7ff97;">
+                            <div class="place">
+                                <h6 class="text-purple">2021 - 2024</h6>
+                                <p class="fw-medium mb-0">SMKN 1 Denpasar</p>
+                            </div>
+                            <div class="w-100 bg-purple my-1" style="height: 2px;"></div>
+                            <div class="status">
+                                <p class="mb-0">Siswa</p>
+                                <p class="mb-0">RPL</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-9 col-xl-10 px-0 px-lg-2 d-flex flex-column justify-content-between">
+                            <p class="mb-0">Selama bersekolah, saya menerima pelajaran dasar pemrograman seperti Pascal dan C. Saya juga belajar pengembangan website menggunakan HTML, CSS, JavaScript, dan PHP, serta pembuatan database dengan MySQL dan XAMPP. Selain itu, saya mempelajari pengembangan aplikasi Android menggunakan Android Studio dan bahasa Java. Saya juga diberi kesempatan untuk mengikuti Lomba Kompetensi Siswa Nasional (LKSN) dalam kategori IT Software Solution for Business.</p>
+                            <p class="mb-0 mt-3" style="width: max-content;"><i class="bi bi-pin-map-fill"></i> Denpasar, Bali</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="bg-purple container-fluid d-flex min-vh-100 justify-content-center align-items-center pt-5 overflow-hidden">
             <div class="title text-center">
                 <h6 data-aos="fade-right" class="text-purple mb-0">PORTFOLIO</h6>
-                <h1 data-aos="fade-left">Projects</h1>
+                <h1 data-aos="fade-left">Proyek</h1>
                 <div class="row m-0 p-0 gap-3 justify-content-center">
-                    <div data-aos="zoom-in" class="card p-0" style="width: 20rem;">
-                        <a href="assets/myshoes/home.png" data-fancybox="gallery_myshoes" data-caption="Home">
+                    <div data-aos="zoom-in" class="card p-0 overflow-hidden" style="width: 20rem;">
+                        <a href="assets/myshoes/home.png" data-fancybox="gallery_myshoes" data-caption="Home" class="position-relative detail-show">
                             <img src="assets/myshoes/home.png" class="card-img-top" alt="my_shoes_web">
+                            <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-3"><i class="bi bi-arrows-fullscreen"></i></div>
                         </a>
                         <a href="assets/myshoes/product.png" data-fancybox="gallery_myshoes" data-caption="Product">
                             <img src="assets/myshoes/product.png" class="card-img-top d-none" alt="my_shoes_web">
@@ -150,9 +206,10 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in" class="card p-0" style="width: 20rem;">
-                        <a href="assets/genshin/home.png" data-fancybox="gallery_genshin" data-caption="Home">
+                    <div data-aos="zoom-in" class="card p-0 overflow-hidden" style="width: 20rem;">
+                        <a href="assets/genshin/home.png" data-fancybox="gallery_genshin" data-caption="Home" class="position-relative detail-show">
                             <img src="assets/genshin/home.png" class="card-img-top" alt="genshin_web">
+                            <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-3"><i class="bi bi-arrows-fullscreen"></i></div>
                         </a>
                         <a href="assets/genshin/komposisi.png" data-fancybox="gallery_genshin" data-caption="Komposisi Party">
                             <img src="assets/genshin/komposisi.png" class="card-img-top d-none" alt="genshin_web">
@@ -178,9 +235,10 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in" class="card p-0" style="width: 20rem;">
-                        <a href="assets/learncode/home.png" data-fancybox="gallery_learncode" data-caption="Home">
+                    <div data-aos="zoom-in" class="card p-0 overflow-hidden" style="width: 20rem;">
+                        <a href="assets/learncode/home.png" data-fancybox="gallery_learncode" data-caption="Home"  class="position-relative detail-show">
                             <img src="assets/learncode/home.png" class="card-img-top" alt="my_shoes_web">
+                            <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-3"><i class="bi bi-arrows-fullscreen"></i></div>
                         </a>
                         <a href="assets/learncode/projects.png" data-fancybox="gallery_learncode" data-caption="Projects">
                             <img src="assets/learncode/projects.png" class="card-img-top d-none" alt="my_shoes_web">
@@ -207,9 +265,10 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in" class="card p-0" style="width: 20rem;">
-                        <a href="assets/animelist/page1.png" data-fancybox="gallery_animelist" data-caption="Home">
+                    <div data-aos="zoom-in" class="card p-0 overflow-hidden" style="width: 20rem;">
+                        <a href="assets/animelist/page1.png" data-fancybox="gallery_animelist" data-caption="Home" class="position-relative detail-show">
                             <img src="assets/animelist/page1.png" class="card-img-top" alt="animelist-web">
+                            <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-3"><i class="bi bi-arrows-fullscreen"></i></div>
                         </a>
                         <a href="assets/animelist/page2.png" data-fancybox="gallery_animelist" data-caption="Anime">
                             <img src="assets/animelist/page2.png" class="card-img-top d-none" alt="animelist-web">
@@ -239,9 +298,10 @@
                         </div>
                     </div>
 
-                    <div data-aos="zoom-in" class="card p-0" style="width: 20rem;">
-                        <a href="assets/to-do-list/index.png" data-fancybox="gallery_to-do-list" data-caption="Home">
+                    <div data-aos="zoom-in" class="card p-0 overflow-hidden" style="width: 20rem;">
+                        <a href="assets/to-do-list/index.png" data-fancybox="gallery_to-do-list" data-caption="Home" class="position-relative detail-show">
                             <img src="assets/to-do-list/index.png" class="card-img-top" alt="to-do-list-web">
+                            <div class="detail position-absolute top-0 w-100 h-100 d-flex align-items-center justify-content-center text-white fs-3"><i class="bi bi-arrows-fullscreen"></i></div>
                         </a>
                         <div class="card-body">
                           <div class="d-flex justify-content-between mb-1 align-items-center">
@@ -312,6 +372,7 @@
                     <a href="https://www.instagram.com/angga_saputra547" target="_blank" class="fs-5 text-dark"><i class="bi bi-instagram"></i></a>
                 </div>
                 <p class="mb-0 text-center">Dibuat oleh <strong class="text-purple">ANGGA</strong></p>
+                <a href="https://www.flaticon.com/icons" class="text-center w-100 d-inline-block mt-2 text-dark" title="icons" style="font-size: 10px;">Icons created by Freepik - Flaticon</a>
             </footer>
         </div>
     </div>
