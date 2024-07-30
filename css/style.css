@@ -119,13 +119,6 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
-.certificates img {
-  transition: ease 0.2s all;
-}
-.certificates img:hover {
-  transform: scale(1.1);
-}
-
 .detail-show:hover .detail{
   opacity: 100;
 }
