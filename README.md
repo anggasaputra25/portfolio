@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Angga – Frontend Developer & Web App Enthusiast
 
-## Getting Started
+Hi! I’m **Angga**, a frontend-focused web developer who’s also expanding into backend development with **Laravel** to build full-stack capabilities. I enjoy creating clean, efficient, and user-centered web applications, and I occasionally explore mobile development with **Flutter** to broaden my perspective on cross-platform experiences.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Frontend**
+- Bootstrap  
+- Tailwind CSS  
+- React  
+- Next.js  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Backend**
+- Laravel  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Mobile**
+- Flutter  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Portfolio Style  
+I prefer a **minimalist and elegant** design approach—clean visuals, purposeful spacing, and intuitive user experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🔗 **Portfolio:** https://anggasaputra.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 Current Focus
+- Building robust frontend architectures  
+- Exploring full-stack workflows with Laravel  
+- Understanding cross-platform UI patterns (Web ↔ Mobile)  
+- Creating real-world dummy projects to grow my portfolio  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💡 What Makes Me Different
+Highly adaptable and committed to learning new technologies when needed—focused on delivering high-value, practical solutions.
+
+---
+
+## 📫 Contact
+*(Tambahkan sesuai kebutuhanmu: GitHub, email, LinkedIn, dll.)*
