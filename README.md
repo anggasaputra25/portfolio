@@ -37,8 +37,3 @@ I prefer a **minimalist and elegant** design approach—clean visuals, purposefu
 
 ## 💡 What Makes Me Different
 Highly adaptable and committed to learning new technologies when needed—focused on delivering high-value, practical solutions.
-
----
-
-## 📫 Contact
-*(Tambahkan sesuai kebutuhanmu: GitHub, email, LinkedIn, dll.)*
