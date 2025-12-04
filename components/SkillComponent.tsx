@@ -56,8 +56,19 @@ export default function SkillComponent() {
 
     return (
         <div>
-            <h2 className="font-medium text-3xl mb-4">SKILLS</h2>
-            <div className="hidden md:flex w-fit">
+            <h2 className="font-medium text-3xl mb-4 overflow-y-hidden">
+                {'SKILLS'.split('').map((letter, index) => (
+                    <span
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                        className="inline-block"
+                    >
+                        {letter}
+                    </span>
+                ))}
+            </h2>
+            <div className="hidden md:flex w-fit" data-aos="fade-up">
                 {tabs.map((tab, index) => {
                     const Icon = tab.icon;
                     return (
@@ -79,7 +90,7 @@ export default function SkillComponent() {
                 })}
             </div>
             
-            <div className="flex md:hidden w-fit">
+            <div className="flex md:hidden w-fit" data-aos="fade-up">
                 {tabs.map((tab, index) => {
                     const Icon = tab.icon;
                     return (
@@ -100,7 +111,7 @@ export default function SkillComponent() {
                     );
                 })}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mt-3" data-aos="fade-up">
                 {tabContents[activeTab].map((item, index) => {
                     const Icon = item.icon;
                     return (

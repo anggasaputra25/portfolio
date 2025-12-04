@@ -197,8 +197,19 @@ export default function ProjectComponent() {
 
     return (
         <div>
-            <h2 className="font-medium text-3xl mb-4">PROJECTS</h2>
-            <div className="hidden md:flex w-fit">
+            <h2 className="font-medium text-3xl mb-4 overflow-y-hidden">
+                {'PROJECTS'.split('').map((letter, index) => (
+                    <span
+                        key={index}
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
+                        className="inline-block"
+                    >
+                        {letter}
+                    </span>
+                ))}
+            </h2>
+            <div className="hidden md:flex w-fit" data-aos="fade-up">
                 {tabs.map((tab, index) => {
                     const Icon = tab.icon;
                     return (
@@ -223,7 +234,7 @@ export default function ProjectComponent() {
                 })}
             </div>
 
-            <div className="flex md:hidden w-fit">
+            <div className="flex md:hidden w-fit" data-aos="fade-up">
                 {tabs.map((tab, index) => {
                     const Icon = tab.icon;
                     return (
@@ -248,7 +259,7 @@ export default function ProjectComponent() {
                 })}
             </div>
 
-            <div className={`grid gap-4 mt-3 grid-cols-1 md:grid-cols-2`}>
+            <div className={`grid gap-4 mt-3 grid-cols-1 md:grid-cols-2`} data-aos="fade-up">
                 {currentData.map((item, index) => (
                     <div key={index} className="bg-gray-100 dark:bg-neutral-800 rounded-sm overflow-x-hidden h-full flex flex-col">
                     {/* <div key={index} className="flex flex-col h-full bg-gray-100 dark:bg-neutral-800 rounded-sm overflow-x-hidden"> */}
