@@ -17,6 +17,14 @@ export default function ProjectComponent() {
     const tabContents = [
         [
             {
+                imgUrl: '/images/projects/project-14.png',
+                label: "Bisense",
+                description: "Bisense is a Business Intelligence and data analytics platform designed to help entrepreneurs transform raw business data into actionable insights.",
+                github: 'https://github.com/anggasaputra25/bisense',
+                instagram: '',
+                tags: ["Tailwind", "NextJS", "MySQL", "Gemini API"],
+            },
+            {
                 imgUrl: '/images/projects/project-13.png',
                 label: "Studia",
                 description: "Studia is a web-based learning platform. Studia simplifies the material, provides automated quizzes, and delivers interactive discussions powered by AI.",
