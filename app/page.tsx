@@ -92,14 +92,14 @@ export default function Home() {
                     </div>
                     <div data-aos="fade-up">
                         <Image
-                            src="/images/profile.png"
+                            src="/images/profile.jpeg"
                             alt="Profile"
                             width={500}
                             height={500}
                             className="object-cover max-w-70 max-h-70 rounded-md lg:grayscale hover:grayscale-0 transition-all duration-200 ease-linear"
                         />
                     </div>
-                    <p className="sm:hidden">Hello! I&apos;m a Web Developer passionate about creating modern, responsive, and functional websites.</p>
+                    <p className="sm:hidden text-center">Hello! I&apos;m a Web Developer passionate about creating modern, responsive, and functional websites.</p>
                 </div>
 
                 {/* Dividers and Components */}
