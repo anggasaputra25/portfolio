@@ -3,12 +3,13 @@ import ContactComponent from "@/components/ContactComponent";
 import FollowComponent from "@/components/FollowComponent";
 import ProjectComponent from "@/components/ProjectComponent";
 import SkillComponent from "@/components/SkillComponent";
-import { BriefcaseBusiness, Moon, Sun } from "lucide-react";
+import { BriefcaseBusiness, FolderGit2, GraduationCap, House, Moon, Sun, User } from "lucide-react";
 import Image from "next/image";
-import { useTheme } from "@/hooks/useTheme"; // Import hook
+import { useTheme } from "@/hooks/useTheme";
 import { useEffect } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import Link from "next/link";
 
 export default function Home() {
     const { setThemeMode, isDark, mounted } = useTheme();
@@ -40,6 +41,45 @@ export default function Home() {
 
     return (
         <div className={`${isDark ? 'dark' : ''} bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen duration-200 ease-linear`}>
+
+            {/* Navbar */}
+            <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 lg:bottom-auto lg:right-10 lg:top-1/2 lg:-translate-y-1/2 lg:left-auto lg:-translate-x-0 z-10">
+                <div className="flex lg:flex-col w-fit gap-2 bg-gray-200 dark:bg-neutral-800 rounded-full p-1">
+                    <Link href={'#'}
+                        className={`p-2 rounded-full transition-all duration-200 cursor-pointer ${isDark
+                                ? 'hover:bg-neutral-700 text-neutral-400 hover:text-white'
+                                : 'hover:bg-gray-300 text-gray-600 hover:text-black'
+                            }`}
+                    >
+                        <House size={20} />
+                    </Link>
+                    <Link href={'#skill'}
+                        className={`p-2 rounded-full transition-all duration-200 cursor-pointer ${isDark
+                                ? 'hover:bg-neutral-700 text-neutral-400 hover:text-white'
+                                : 'hover:bg-gray-300 text-gray-600 hover:text-black'
+                            }`}
+                    >
+                        <GraduationCap size={20} />
+                    </Link>
+                    <Link href={'#project'}
+                        className={`p-2 rounded-full transition-all duration-200 cursor-pointer ${isDark
+                                ? 'hover:bg-neutral-700 text-neutral-400 hover:text-white'
+                                : 'hover:bg-gray-300 text-gray-600 hover:text-black'
+                            }`}
+                    >
+                        <FolderGit2 size={20} />
+                    </Link>
+                    <Link href={'#profile'}
+                        className={`p-2 rounded-full transition-all duration-200 cursor-pointer ${isDark
+                                ? 'hover:bg-neutral-700 text-neutral-400 hover:text-white'
+                                : 'hover:bg-gray-300 text-gray-600 hover:text-black'
+                            }`}
+                    >
+                        <User size={20} />
+                    </Link>
+                </div>
+            </nav>
+
             {/* Theme Toggle Buttons */}
             <div className="py-10 flex justify-center">
                 <div className="flex w-fit gap-2 bg-gray-200 dark:bg-neutral-800 rounded-full p-1" data-aos="fade-down">
@@ -92,7 +132,7 @@ export default function Home() {
                     </div>
                     <div data-aos="fade-up">
                         <Image
-                            src="/images/profile.jpeg"
+                            src="/images/profile.png"
                             alt="Profile"
                             width={500}
                             height={500}
@@ -104,15 +144,23 @@ export default function Home() {
 
                 {/* Dividers and Components */}
                 <div className="w-full h-0.5 bg-neutral-400 dark:bg-neutral-700"></div>
-                <SkillComponent />
+                <div id="skill">
+                    <SkillComponent />
+                </div>
                 <div className="w-full h-0.5 bg-neutral-400 dark:bg-neutral-700"></div>
-                <ProjectComponent />
+                <div id="project">
+                    <ProjectComponent />
+                </div>
                 <div className="w-full h-0.5 bg-neutral-400 dark:bg-neutral-700"></div>
-                <ContactComponent />
+                <div id="profile">
+                    <ContactComponent />
+                </div>
                 <div className="w-full h-0.5 bg-neutral-400 dark:bg-neutral-700"></div>
                 <FollowComponent />
-                <p className="text-center mb-10">Created by ANGGA</p>
             </main>
+            <footer className="mt-20 mb-20 lg:mb-10">
+                <p className="text-center">Created by ANGGA</p>
+            </footer>
         </div>
     );
 }
